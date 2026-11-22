@@ -1,0 +1,3 @@
+Pet artwork: the 鸭牌 preset by 春也Huruya, as collected on 呜哇小站 emoji.wuwa.games (see assets/CREDITS.txt).
+DeepSeek mark: DeepSeek Harness favicon, blue variant used to identify the connected app.
+This project is independent and is not an official app.

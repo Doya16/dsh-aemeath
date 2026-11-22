@@ -1,0 +1,1 @@
+"""Aemeath DeepSeek desktop companion."""

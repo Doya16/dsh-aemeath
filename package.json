@@ -1,0 +1,67 @@
+{
+  "name": "dsh-aemeath",
+  "description": "《鸣潮》爱弥斯陪你使用 DeepSeek Harness：任务进行时换表情（鸭牌、雾雪、Stephen 三套表情预设），完成后用她的声音和字幕回应；可以摸摸头、拖一拖，自选表情、语音和台词，还能导入呜哇小站下载的爱弥斯表情包。支持 Windows 10/11 x64 本机 Harness；首次需下载完整程序。",
+  "version": "1.0.0",
+  "author": "Doya16",
+  "homepage": "https://github.com/Doya16/dsh-aemeath#readme",
+  "bugs": {
+    "url": "https://github.com/Doya16/dsh-aemeath/issues"
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "icon": "./icon.png",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/*.js",
+    "cordis.patch.yml",
+    "icon.png",
+    "locale/*.json",
+    "runtime-manifest.json",
+    "tools/extract-runtime.ps1",
+    "CREDITS.txt"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "aemeath",
+    "desktop-pet",
+    "wuthering-waves"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doya16/dsh-aemeath.git"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "verify:publish": "node tools/verify-npm-source.mjs",
+    "prepublishOnly": "node tools/verify-npm-source.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
