@@ -13,7 +13,7 @@
 
 The plugin runs the same program as the [Aemeath DeepSeek desktop pet](https://github.com/Doya16/aemeath-deepseek-pet) full package: three expression presets (鸭牌, 雾雪, Stephen), 90 subtitled Aemeath voice lines, the balance box and per-turn cost float, and import of Aemeath sticker packs downloaded from 呜哇小站. The plugin downloads, starts and connects the program; no separate connection plugin is needed.
 
-**Requirements:** Windows 10 (1809 or later) / 11 x64 with a local DeepSeek Harness. The first start downloads the full program (about {SIZE} MiB); no Python needed.
+**Requirements:** Windows 10 (1809 or later) / 11 x64 with a local DeepSeek Harness. The first start downloads the full program (about 186 MiB); no Python needed.
 
 ## Getting started
 

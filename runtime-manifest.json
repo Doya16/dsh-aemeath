@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "bytes": 361489259,
-  "sha256": "0178404b35ac194f0aefd2df1c86b59d5c045edc25ec18163250b734cade8e7d",
+  "bytes": 195394853,
+  "sha256": "0b167010bf91c3c84591f5ce849bea91629dd9093dc31a167015e84b2429d426",
   "url": "https://github.com/Doya16/dsh-aemeath/releases/download/v1.0.0/Aemeath-Windows-v1.0.0.zip",
   "program": {
     "schema": 1,
@@ -11,177 +11,49 @@
     "bridge_protocol": 1,
     "patch": {
       "name": "Aemeath-Program-Update-v1.0.0.zip",
-      "bytes": 126803999,
-      "sha256": "4527077945ad312f0cf1f3a50b53ccb40c3b04b6316071f5a2eb7f943c4fad4a"
+      "bytes": 124825212,
+      "sha256": "74135bb4e60a425aeb0a55ace408bc4192146c5b7f4ce6677a557f535d150da8"
     },
     "files": {
       "\u7231\u5f25\u65afDeepSeek\u684c\u5ba0\u542f\u52a8.exe": {
-        "bytes": 8625849,
-        "sha256": "d1c130912f43c1f9a71e0b26e8d1e37f5fe37cfc3d47eade204c31fcc799fa53"
+        "bytes": 8593379,
+        "sha256": "52c5d678aa19cfa1ab1c3b51073b6177b4534a13e0cd0172fdea03d72a17d4ba"
       },
       "tools/aemeath-updater.exe": {
-        "bytes": 8632142,
-        "sha256": "f5e2c2e77a77018a1054f7bdec54883b5b75bf25ef6d32435e0d53bda10bae06"
+        "bytes": 8602919,
+        "sha256": "3ff5f11084bcd8abdc0cac28bb08e2b8ad966505c01d58f0611094fc2ef7ded5"
       },
       "BUILD_INFO.json": {
-        "bytes": 463,
-        "sha256": "68ed72c66b085605fcf6994477b1ed5cdd6452b494278ecfcfc90150211715a6"
+        "bytes": 464,
+        "sha256": "40d4cfaf691574169c435b57b36b16bfed6883eb2eaefdde2c21202acbb7b4d9"
+      },
+      "resources/emoji-index.json": {
+        "bytes": 353307,
+        "sha256": "809fc8091fd71db5c5dcf23616c3d60d6e70f23b9b7e5253436665ffb95ccc3e"
       },
       "resources/icons/app.ico": {
-        "bytes": 188811,
-        "sha256": "857ecf858232e19b2f08b60a215dd3d2bddbb7a0439d678ab3f8667cd9d3a208"
+        "bytes": 158283,
+        "sha256": "6e2219ff75294a45b723e0eee78362c2405c7d96e9d58dd0968152ea1f7810a0"
       },
       "resources/icons/badge.svg": {
         "bytes": 3637,
         "sha256": "d3f69c53ee05ac74dac3efd19fbf9b6c6d90709f26356989586cdf490ea74182"
       },
       "resources/icons/CREDITS.txt": {
-        "bytes": 255,
-        "sha256": "223eac4174cbddcee34d0922e69b44cff8a47843d0464387d990ee5c96a4686d"
-      },
-      "resources/voice-repair/003-\u5355\u51fb3.ogg": {
-        "bytes": 48339,
-        "sha256": "ac7dbb798f0a6c81bc49dbf0a6cd976f29ff248e551ec7117c60fac0ae4212ca"
-      },
-      "resources/voice-repair/007-\u5355\u51fb7.ogg": {
-        "bytes": 51186,
-        "sha256": "b1a1b716a9d1b2fbd7d1de3f3343b0f33927ff023a5f8998e954cef06b82306b"
-      },
-      "resources/voice-repair/009-\u5355\u51fb9.ogg": {
-        "bytes": 75758,
-        "sha256": "685b0818af892f561375629df0e1475d32cb0e6e1b70dc93f31889bb653738fb"
-      },
-      "resources/voice-repair/012-\u5355\u51fb12.ogg": {
-        "bytes": 43966,
-        "sha256": "a759cd787ce1e18fc2535ea7f79f71d83850f76e6a5bc7c9ab706baec32c2db0"
-      },
-      "resources/voice-repair/016-\u53cc\u51fb\u89d2\u82721.ogg": {
-        "bytes": 48677,
-        "sha256": "bb64a637253d2fc86a960fd85f1e2ce153c473d8d32110145ac49640aa78a2c7"
-      },
-      "resources/voice-repair/017-\u53cc\u51fb\u89d2\u82722.ogg": {
-        "bytes": 87929,
-        "sha256": "6ec33d5b8e03088490cfce0ba65f75a4163a589d24b831c668d6d1c6a968c08c"
-      },
-      "resources/voice-repair/018-\u53cc\u51fb\u89d2\u82723.ogg": {
-        "bytes": 64517,
-        "sha256": "70ff2f6152fd15f88ec6474e40ae1b2b04dedcdc1c6dee92a188b124b0c8191d"
-      },
-      "resources/voice-repair/020-\u53cc\u51fb\u89d2\u82725.ogg": {
-        "bytes": 76375,
-        "sha256": "95a931eefd71ec45602464bb4bcad2f291531daff9ec62e3d7c39ab345d0b386"
-      },
-      "resources/voice-repair/023-\u9f20\u6807\u505c\u75591.ogg": {
-        "bytes": 72973,
-        "sha256": "5eaca3838b87fc97ec285890f7c570cea3ee8867b5e05e27824f485f530e11b2"
-      },
-      "resources/voice-repair/041-\u677e\u5f008.ogg": {
-        "bytes": 48816,
-        "sha256": "b7771c5984d155a1e1142213382184c0a6c662e7a91049adf93a33c25b88b5cc"
-      },
-      "resources/voice-repair/043-\u9012\u5976\u83362.ogg": {
-        "bytes": 56640,
-        "sha256": "ade7ade5546492260b13ce6326632a74a58bd944bba42a94725860ec4eed4e23"
-      },
-      "resources/voice-repair/044-\u9012\u5976\u83363.ogg": {
-        "bytes": 74216,
-        "sha256": "e5d0d980da27afd7b2e0565a219b9be6572e24133b9ef2aaec1fcb531f304ad2"
-      },
-      "resources/voice-repair/046-\u9012\u5976\u83365.ogg": {
-        "bytes": 77324,
-        "sha256": "8ff73bc2c54435d7670993068ad25ed39131c813aa28a25394fe8595d9071c0e"
-      },
-      "resources/voice-repair/051-\u5f85\u673a\u966a\u4f342.ogg": {
-        "bytes": 83289,
-        "sha256": "a2fb04f58008eecf15f4a8924a0f61c69750b14cbfd2d861a3ceb7aa6967912c"
-      },
-      "resources/voice-repair/055-\u5f85\u673a\u966a\u4f346.ogg": {
-        "bytes": 64109,
-        "sha256": "081d7e7581b3db911e756e8c112e7270389eda9fbbe401db97ca734b0b9556c2"
-      },
-      "resources/voice-repair/057-\u5f85\u673a\u966a\u4f348.ogg": {
-        "bytes": 63141,
-        "sha256": "182704776a2e6e2835419e48a5239b6654c72a68551eee67f944bcd6d49c306d"
-      },
-      "resources/voice-repair/059-\u5f85\u673a\u966a\u4f3410.ogg": {
-        "bytes": 75770,
-        "sha256": "5a1d83ed48eb1fe31b4e01303c8f5155d37cdd7f53267fa0090db2b3ac98408c"
-      },
-      "resources/voice-repair/061-\u5f85\u673a\u966a\u4f3412.ogg": {
-        "bytes": 85202,
-        "sha256": "16074e1271c6e204c3120651973fb2f6a7806f8a4c95fc1a7eae7b255ae69ae9"
-      },
-      "resources/voice-repair/062-\u5f85\u673a\u966a\u4f3413.ogg": {
-        "bytes": 70095,
-        "sha256": "a00dc16a4c0a9fe225baffe423aa34932802fc22cbddbfcd143385f1ecd78c21"
-      },
-      "resources/voice-repair/065-\u5f85\u673a\u966a\u4f3416.ogg": {
-        "bytes": 60239,
-        "sha256": "3f8102ef6f2e75f67b4f8853232248256d4011a7ecdbe3c8d39aac022c5f5b9e"
-      },
-      "resources/voice-repair/067-\u5f85\u673a\u966a\u4f3418.ogg": {
-        "bytes": 49102,
-        "sha256": "8fd499b3dbefd91600c92df3b40f4e37816e49e3bf4b82c60b080764bf635e7e"
-      },
-      "resources/voice-repair/071-\u5f85\u673a\u966a\u4f3422.ogg": {
-        "bytes": 90761,
-        "sha256": "b413221500482675fa14255ba54d97d7e31bd7c9b7e8ef2054409ea589349096"
-      },
-      "resources/voice-repair/074-\u5f85\u673a\u966a\u4f3425.ogg": {
-        "bytes": 46234,
-        "sha256": "8f47078ad8c5b665594f6c5af9bb002698c2378affeccf96d060046c17344656"
-      },
-      "resources/voice-repair/078-\u6574\u74064.ogg": {
-        "bytes": 48339,
-        "sha256": "ac7dbb798f0a6c81bc49dbf0a6cd976f29ff248e551ec7117c60fac0ae4212ca"
-      },
-      "resources/voice-repair/079-\u6574\u74065.ogg": {
-        "bytes": 43880,
-        "sha256": "ec6fda2ec446536f607a92f39f50979cd071b7bcb4316830f573abc52251327a"
-      },
-      "resources/voice-repair/081-\u6574\u74067.ogg": {
-        "bytes": 41635,
-        "sha256": "0d581d4e1ca4c860bb7e1bc09db665d0b3b120f3ffebc1bdc36530136918d0ff"
-      },
-      "resources/voice-repair/087-\u6574\u740613.ogg": {
-        "bytes": 56734,
-        "sha256": "26027667a51d7c27b5285f2bef63ad2e05c81e52ae44c15be14fa582666095a0"
-      },
-      "resources/voice-repair/100-\u4efb\u52a1\u5b8c\u62103.ogg": {
-        "bytes": 41625,
-        "sha256": "d55404a01fc765ab89abccb121704e68423b01d43c85f6b8f51e466ff5babf24"
-      },
-      "resources/voice-repair/101-\u4efb\u52a1\u5b8c\u62104.ogg": {
-        "bytes": 64831,
-        "sha256": "3b0b5638839f44c80ddbc29e5a97499ec0d8c29de590b449378231150cf8e136"
-      },
-      "resources/voice-repair/105-\u4efb\u52a1\u5b8c\u62108.ogg": {
-        "bytes": 53134,
-        "sha256": "c6f445009c73d4b9e940f759bca649ea33cd555bb2f752c9e1615557300037de"
-      },
-      "resources/voice-repair/109-\u4efb\u52a1\u5b8c\u621012.ogg": {
-        "bytes": 54009,
-        "sha256": "d3a831684121ca4a0d3497f948642f11e76ed321a158a84155331e77d2f23aa0"
-      },
-      "resources/voice-repair/111-\u4efb\u52a1\u51fa\u95192.ogg": {
-        "bytes": 34328,
-        "sha256": "a1300967ecb37cfbb920c7f2f8517c831c2f16eee98b6fb52cfd5b19e668fe16"
-      },
-      "resources/voice-repair/115-\u4efb\u52a1\u6682\u505c1.ogg": {
-        "bytes": 51817,
-        "sha256": "cad75adb5d7e3dcc2e1cdc00e1c6d73f38ffa81827a7daaa22806f6ec820a9a9"
+        "bytes": 266,
+        "sha256": "a6bbc5af27f201d64e7f33d3264fb435350abde6c5d6b03ddeb2c2f5b3ad7edd"
       },
       "resources/voice-repair/repairs.json": {
-        "bytes": 7376,
-        "sha256": "a6d313407971bca669c4caa0e2e7eedf2a6060ce791d6517724fc6f05ac78276"
+        "bytes": 64,
+        "sha256": "2a63c3eabe65c13012185e658d899e639a82eb371fd0cb65cb33175e095a7f91"
       },
       ".programs/1.0.0/\u7231\u5f25\u65afDeepSeek\u684c\u5ba0\u542f\u52a8.exe": {
-        "bytes": 5741485,
-        "sha256": "5a9b926250eb254b06fb14011e2291dfb533235414e292743d278b0ff7b03b61"
+        "bytes": 5735908,
+        "sha256": "a0c06313cbdb978b371a9497a1842a9551c8858e529c9ce8a61d23f79f02c90c"
       },
       ".programs/1.0.0/_internal/base_library.zip": {
         "bytes": 1333490,
-        "sha256": "6dd221e484cc6634382a09cb19af6e04c917320f41d777143411a528ae697254"
+        "sha256": "c0d82910e39720709ada60c366277f2d5ba5fb8bc2ec647e404a956b57f9d528"
       },
       ".programs/1.0.0/_internal/libcrypto-3-x64.dll": {
         "bytes": 8003376,
@@ -1168,12 +1040,12 @@
         "sha256": "14abc5b245c0f2e03f7bc0b474a8db2ecb441c7300a8a8b16fb865eaf2674619"
       },
       "MIGRATION.txt": {
-        "bytes": 1470,
-        "sha256": "4596d78c08fafaa2a64b1358da0c72c6de87ccd1de9e76fcd93f15952baf0811"
+        "bytes": 1792,
+        "sha256": "8fb4432feebb782f7f2338ca43a14daf7aa45de5b4fbab9ceb900d9800c7c862"
       },
       "THIRD_PARTY.txt": {
-        "bytes": 2269,
-        "sha256": "8da92ab148ab078aff7c0014a096e5adf9dd034c3d97fc894336743ab9b58ca4"
+        "bytes": 2810,
+        "sha256": "65624b10342f82a04a4d64ff12ced4adc4c459fb3b2d02493170a35285cc55bb"
       },
       "requirements.txt": {
         "bytes": 96,
@@ -1184,16 +1056,16 @@
         "sha256": "ab2f22ffa0d13daaf8ab9d16f253210f4cceca501011a8633b734f460102473e"
       },
       "tools/run_pet.py": {
-        "bytes": 299,
-        "sha256": "ec586daf30d9eb16ce2953e0d92df7c6f533542900318689369b05b1ad88afd2"
+        "bytes": 300,
+        "sha256": "fff3780b13226cd30cdfbe64875bdb18ad11befde58924c85c00a2cfff77cb51"
       },
       "aemeath_pet/appearance.py": {
         "bytes": 7375,
         "sha256": "d43f83ecdf8c445417e1490ea73f196f1f697907d2b1d3b6f054f78b1be5dfe9"
       },
       "aemeath_pet/app_icons.py": {
-        "bytes": 390,
-        "sha256": "e923652c55ff13cce90c9f4b061e8844f8db69f7ddd115d69ce162a090733bef"
+        "bytes": 392,
+        "sha256": "36b2aa00c00ca1cb257ac43076c9c85241d551eb1bbbb134904d1f7a7cdb14b1"
       },
       "aemeath_pet/audio_convert.py": {
         "bytes": 3435,
@@ -1209,27 +1081,27 @@
       },
       "aemeath_pet/binding_editor.py": {
         "bytes": 9836,
-        "sha256": "85e921bf25f972174b6e97b5c44b7774874da93bd7ee978128698c3606f63c92"
+        "sha256": "4a7bc5b58ef37736d84435f35996d3c12091606e51a67ca933bdd6a88083e0f5"
       },
       "aemeath_pet/bridge.py": {
-        "bytes": 7416,
-        "sha256": "2a248055cf7d556da06d99037ae144e0856d03154edaf8be23a55907273b62f9"
+        "bytes": 7418,
+        "sha256": "3427631c534bd094a8bc28616e37be6766738a9cc8ca98b4d6f9512cefee3cb0"
       },
       "aemeath_pet/bubble_window.py": {
         "bytes": 3758,
-        "sha256": "8d36ea882081ad6bd24c03ebaa70de631c3d556cb9ddb37196eb423377bf3659"
+        "sha256": "2a116d1aa0b1c51622a28e1e424590b85f7aceea93200febec7f3ecf363c7d75"
       },
       "aemeath_pet/celebrate.py": {
         "bytes": 2722,
-        "sha256": "deed9cf23a58e834406cea63b14c1dd7005c8a60afd814e7896d714b57981239"
+        "sha256": "8bf06a55ffade42f1d7668d2eb2589de0fab43c2a0147491461a1608ebb0c4c0"
       },
       "aemeath_pet/client_lifetime.py": {
         "bytes": 1039,
         "sha256": "b4d62f580518f333dc283ad937878edb32601c0785873be8f78116cea0aee3c2"
       },
       "aemeath_pet/config_io.py": {
-        "bytes": 10090,
-        "sha256": "c36408d59fb5b7fba92cb490eef53c1ee8e0ff6d1d10e4ee88e21285a3e15ecd"
+        "bytes": 10097,
+        "sha256": "3a46f9fc50e091d759cd1737db19e2ae246cc86c3d1509e9c6586ece9296070e"
       },
       "aemeath_pet/control_guard.py": {
         "bytes": 853,
@@ -1237,7 +1109,7 @@
       },
       "aemeath_pet/cost_float.py": {
         "bytes": 10339,
-        "sha256": "f320c427fbf2f23716b9ce13afa11ec91e3d857e90d738323afa11bdbe79c9ec"
+        "sha256": "50541871bfd0f6b228867b0eefef3bf869c0adf94c218724191650c6850f161b"
       },
       "aemeath_pet/daily_recap.py": {
         "bytes": 3832,
@@ -1246,6 +1118,10 @@
       "aemeath_pet/edge_dock.py": {
         "bytes": 8688,
         "sha256": "2987d34d0bab7bdf6c7f7ab9391b4d13852268a2163c6e97a14c2b557c1a1321"
+      },
+      "aemeath_pet/emoji_import.py": {
+        "bytes": 9910,
+        "sha256": "5f9af324639959eda6c3e8cb21e794399cc5ed7ee0fa62066faa34048efbd30a"
       },
       "aemeath_pet/fullscreen_guard.py": {
         "bytes": 2687,
@@ -1264,32 +1140,36 @@
         "sha256": "010e690f80b1dfc904c2b38d234c5d3c429100127c887a73dcba7b4a98c0c6ec"
       },
       "aemeath_pet/media_library.py": {
-        "bytes": 3119,
-        "sha256": "8849d7ed539b865a4a23024b9613691137b1a3e4d35adc1ff91a7b3a02619567"
+        "bytes": 4602,
+        "sha256": "a61918a73aa5246a10ea9e9b5c03c72c0870bf506a342b47acdf0aeb4168ae43"
       },
       "aemeath_pet/order_list.py": {
         "bytes": 3486,
         "sha256": "b02c0c1f35b6233706076bb3a7cba84667196d08302425f741dda5f943d0817b"
       },
+      "aemeath_pet/packs.py": {
+        "bytes": 1214,
+        "sha256": "2d4e96406baa76070aff08a198e0f79aa4b31d28b0ebf61e9fec3bdf9a610930"
+      },
       "aemeath_pet/paths.py": {
-        "bytes": 573,
-        "sha256": "53c060d71276d22741e9a52565d2aa23e9b0b0d2f032805de60ec43762fe15e9"
+        "bytes": 575,
+        "sha256": "644d6eca47c028de49b8958abfc70af19b2fd2f59c75f896f03e2ec78156cf5e"
       },
       "aemeath_pet/pcm_player.py": {
-        "bytes": 7961,
-        "sha256": "4ef07f2026751516e39892779f725d431ec5a0c99af0d13039b47f0176174835"
+        "bytes": 7962,
+        "sha256": "a83682f82768e4cf79eb672bebe482a54855c73c232b0ad9817222b3011d74a7"
       },
       "aemeath_pet/pet.py": {
-        "bytes": 61395,
-        "sha256": "50351705115ad930644eb702206077f99498be9b70b6a0f000ebba9224c9c580"
+        "bytes": 61478,
+        "sha256": "e68e9cc2522db45053a33d270abbedeb8183c15965b24cfd03623211bb5d7ecf"
       },
       "aemeath_pet/pointer_mode.py": {
         "bytes": 2653,
         "sha256": "46d03efc0fb8c4f8befd75f5566ee375e0fc29a88f7168cf0cd47f30b1610846"
       },
       "aemeath_pet/preferences.py": {
-        "bytes": 28418,
-        "sha256": "bc422faf3036bec8ddf849afeef65a8264d2dc8cd50ae87523ac742aa5e52f4a"
+        "bytes": 31198,
+        "sha256": "798dab223ea7af6195107b4a6501feaaf6d403397cdc8edcac862a17d6bc8e76"
       },
       "aemeath_pet/presentation_size.py": {
         "bytes": 6213,
@@ -1300,8 +1180,8 @@
         "sha256": "b53335a5d692354ac2a7c61d908efc6110d16a4bf4691b254f634628662388c7"
       },
       "aemeath_pet/previews.py": {
-        "bytes": 17471,
-        "sha256": "633219f7b6722b3bd4b7b8e59d445b491bfdde5ee6e12e7a4c257a660f7a86e1"
+        "bytes": 17457,
+        "sha256": "a183f142ebd2a9eca458ef5c884739c6839b1978952bc356d780309a649c38f6"
       },
       "aemeath_pet/pricing.py": {
         "bytes": 2572,
@@ -1317,15 +1197,15 @@
       },
       "aemeath_pet/renderer.py": {
         "bytes": 9527,
-        "sha256": "5ed577d28d8b9afc6b48177bb2a67683af66e0eddfa63743867c5fd96fc1632b"
+        "sha256": "02041b8dec071e2459c25d596b0f433c43ba07b64b7ac808b049329dfad8aa8c"
       },
       "aemeath_pet/rest_reminder.py": {
         "bytes": 6235,
-        "sha256": "5e603fd4e713e572ea8c7971740a6788285449f65fdba3d89ce477886b2875e8"
+        "sha256": "3c43c26f4b1e02fd0af186e6b37a49d37c9d9870ed2f705c73f64dcec564e6a8"
       },
       "aemeath_pet/settings_checks.py": {
         "bytes": 11858,
-        "sha256": "4eba7510956f3c4ea80e5e2116a6daf1f95d494a9b530a7f5f484958e3c3ef95"
+        "sha256": "c12a82f64affaa274a7be05b2692562779537589a854c365f39a553b4a4a9a5f"
       },
       "aemeath_pet/settings_layout.py": {
         "bytes": 8710,
@@ -1333,27 +1213,27 @@
       },
       "aemeath_pet/sizing.py": {
         "bytes": 4063,
-        "sha256": "07e48f5c1d0f22e96a20a0815c8d2d6d30f27bb06c97583e75b3c97663532607"
+        "sha256": "aadcc0ceb0b5d38ddb0d68bd585c91c84429f3c8ba5d06023f5812f6a8150742"
       },
       "aemeath_pet/startup.py": {
-        "bytes": 3662,
-        "sha256": "e5cc2227a1436103aa3adafe6462661474678378118487d10c27907a2d452156"
+        "bytes": 3665,
+        "sha256": "e276f97d9826ab482bbc7b212d43337a71d5d074e598d3c5ab640b619395cf6d"
       },
       "aemeath_pet/studio.py": {
-        "bytes": 20352,
-        "sha256": "7bf2b2fe8387050d3173bed3f385ce6f7f045cc9eab07c88cde898e20bb85c98"
+        "bytes": 31538,
+        "sha256": "071731bd8354a9ab9ef0251c79e257ddbf424dbb0b58579036f97421f683dc7d"
       },
       "aemeath_pet/turn_cost.py": {
         "bytes": 3535,
         "sha256": "7b0148b9998399d540aff80fe9a56de486b2a7720ac41789884a251455166cca"
       },
       "aemeath_pet/updates.py": {
-        "bytes": 4979,
-        "sha256": "95e5e28e44de1673671ca15b8a30162a5f2bf0d8d844447172f29220074e4875"
+        "bytes": 4984,
+        "sha256": "b02befce1de98a886aef3518e882d88b8fc72e2dee1db53c9af788edaa7e77c9"
       },
       "aemeath_pet/update_apply.py": {
-        "bytes": 7855,
-        "sha256": "447f0dda5d42ad350a7f6d46ccf293fe330181225bcf90d27093b99b47880efa"
+        "bytes": 7858,
+        "sha256": "ce2963b660689273459bb314cac5497b1e4ca2eb40a6443a96b26c12b87c3803"
       },
       "aemeath_pet/update_checks.py": {
         "bytes": 2127,
@@ -1361,23 +1241,23 @@
       },
       "aemeath_pet/update_notice.py": {
         "bytes": 3334,
-        "sha256": "b400891aeb81e93435722d9b84cd78758476ceba2b3c1e000c075c56780d959b"
+        "sha256": "970e91b73ef708f272b1d53851aa13c6d8e040eb82daeb876ef5e41ba7c824c2"
       },
       "aemeath_pet/update_package.py": {
-        "bytes": 8185,
-        "sha256": "817999ad0057fc1d5f5b610eba7fe35809602116963efa3316b10fd30e689a93"
+        "bytes": 8192,
+        "sha256": "b8a03c545c8951d1754af4c16e192f006074a24ed93632926a0fc0577f6f2d18"
       },
       "aemeath_pet/update_recovery.py": {
-        "bytes": 8948,
-        "sha256": "f8bf284b42fced004b97a23ad4ebdac69b967747485b4a04f1c5c5772c1c0d52"
+        "bytes": 8950,
+        "sha256": "36956ad764aacc284e19236f367429dbe861b0629c82618b5070fc119b80adc6"
       },
       "aemeath_pet/update_signature.py": {
-        "bytes": 2115,
-        "sha256": "ffa22b2dbc734bc2c6617517400d71f8b457bfaaa3aa5ea3a71930837f64f130"
+        "bytes": 2285,
+        "sha256": "b4a61738d2b18536e432ee3b420686ab9845ec794bfa6666c85ad21777b8332c"
       },
       "aemeath_pet/update_ui.py": {
-        "bytes": 14210,
-        "sha256": "7f224c4cfceeff2cb3064e36ff353c64ca6131fa3818c1e0dad939ea1e15f8a2"
+        "bytes": 14213,
+        "sha256": "99dce331bcdf06dea14b054b10bed2f62ef9888315dbf8ebe94beee4c8fa1c3e"
       },
       "aemeath_pet/voice_editor.py": {
         "bytes": 8129,
@@ -1389,15 +1269,15 @@
       },
       "aemeath_pet/voice_repair.py": {
         "bytes": 2506,
-        "sha256": "3a8e7dd35bc6fe79b26c54012e73cc3ad9d086d03ea8e3007ce132e470d72bf2"
+        "sha256": "0360797f297ffb5a0c59fda11ea90ad857f75c1efe965a2b0fb9a7da48ad5414"
       },
       "aemeath_pet/windows_audio.py": {
         "bytes": 5133,
         "sha256": "d3915747a905a3005c604fddce642a10aa9a034a49e5bbf8f2697ba08544a8cf"
       },
       "aemeath_pet/__init__.py": {
-        "bytes": 41,
-        "sha256": "5ab4cf64ba0eed92488c3cdce297d08d97692e0d145f3748246ee14859ab869d"
+        "bytes": 42,
+        "sha256": "b07d95194b1046c07bdb63fcee3ac5b879dbce49944ebb49ddf499defe831967"
       },
       "aemeath_pet/__main__.py": {
         "bytes": 80,

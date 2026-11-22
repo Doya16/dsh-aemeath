@@ -13,7 +13,7 @@
 
 插件版的桌宠程序与 [爱弥斯 DeepSeek 桌宠](https://github.com/Doya16/aemeath-deepseek-pet) 完整包相同：三套表情预设（鸭牌、雾雪、Stephen）、90 条带字幕的爱弥斯语音、余额框与本轮花费飘字，还能导入呜哇小站下载的爱弥斯表情包。插件负责下载、启动和连接 Harness，不需要另装连接插件。
 
-**使用条件：** Windows 10（1809 及以后）/ 11 x64、本机 DeepSeek Harness。首次启动时下载完整程序（约 {SIZE} MiB），无需安装 Python。
+**使用条件：** Windows 10（1809 及以后）/ 11 x64、本机 DeepSeek Harness。首次启动时下载完整程序（约 186 MiB），无需安装 Python。
 
 ## 开始使用
 
