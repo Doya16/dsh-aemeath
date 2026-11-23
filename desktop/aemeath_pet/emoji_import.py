@@ -39,6 +39,10 @@ def load_index(root):
         slug=entry.get('slug')
         if slug and slug not in packs: packs[slug]=(entry.get('artist') or UNKNOWN_ARTIST,entry.get('pack') or titles.get(slug,slug))
     for slug,title in titles.items(): packs.setdefault(slug,(UNKNOWN_ARTIST,title))
+    from .credits import load as load_credits
+    for pack in load_credits(root)['packs']:
+        artist='&'.join(pack.get('artists') or []) or ('鸣潮官方' if pack['title'].startswith('【官转】') else UNKNOWN_ARTIST)
+        packs.setdefault(pack['slug'],(artist,pack['title']))
     return {'images':images,'packs':packs}
 
 

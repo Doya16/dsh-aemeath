@@ -164,9 +164,55 @@ def write_index(source):
     print(f'index: {len(images)} images, {len(out["packs"])} packs -> {target.relative_to(ROOT)} ({target.stat().st_size // 1024} KB)')
 
 
+CREDITS_HEAD = '''表情包素材来源与致谢
+
+表情包来源：呜哇小站（https://emoji.wuwa.games/ ，表情包仓鼠库）收录的画师作品。
+
+内置的三套表情预设：
+- 鸭牌：春也Huruya（爱弥斯动态表情包（鸭牌），感谢来自群飞行雪绒の小窝（1057194050）的约稿）
+- 雾雪：雾雪（爱弥斯动态表情包（雾雪）、日服生日会、围巾冬装、慵懒情侣衫、家居服、古风等合集）
+- Stephen：Stephen樽（爱弥斯·演唱会捏捏动态表情包（大寸）、演唱会捏捏表情包（小寸）、捏捏表情包）
+
+感谢各位画师创作这些表情包，感谢约稿的群和潮友，也感谢呜哇小站整理收录。更多表情包请在呜哇小站下载后，在交互工作室里导入；桌宠不附带、也不会自动下载站内的表情包。转载或二次分发请先联系站长和画师。
+'''
+CREDITS_TAIL = '''
+角色语音：《鸣潮》爱弥斯的角色语音，由作者剪辑为默认语音。
+
+角色、表情包图片与原版语音的权利归各自权利人所有（《鸣潮》© 库洛游戏）。素材来源说明不改变原有使用条件；表情包仅供个人、非商业使用，请勿倒卖或用于付费分发。程序及字体的许可不适用于角色素材。本程序是个人制作的非官方作品，与库洛游戏和呜哇小站无关。
+'''
+README_MARK = ('<!-- STICKER-CREDITS -->', '<!-- /STICKER-CREDITS -->')
+
+
+def write_credits(source):
+    """resources/sticker-credits.json (shown in 设置 → 版本与更新 → 关于与致谢) and the credit files and README lists built from it."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('credits', ROOT / 'aemeath_pet' / 'credits.py')
+    credits = importlib.util.module_from_spec(spec); spec.loader.exec_module(credits)
+    data = json.loads(pathlib.Path(source).read_text(encoding='utf-8'))
+    (ROOT / credits.CREDITS).write_text(json.dumps(data, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
+    data = credits.load(ROOT)
+    body = (CREDITS_HEAD + '\n呜哇小站收录的全部爱弥斯表情包（每组表情包下面写的群号、约稿说明和作者链接）：\n\n'
+            + credits.summary(data) + '\n\n' + credits.as_text(data) + '\n' + CREDITS_TAIL)
+    (ROOT / 'assets' / 'CREDITS.txt').write_text(body, encoding='utf-8', newline='\n')
+    third = ROOT / 'THIRD_PARTY.txt'; t = third.read_text(encoding='utf-8')
+    a = t.index('表情包素材来源与致谢'); b = t.index('Product marks') if 'Product marks' in t else len(t)
+    third.write_text(t[:a] + body + '\n' + t[b:], encoding='utf-8', newline='\n')
+    for name in ('README.md', 'README.en.md'):
+        p = ROOT / name
+        if not p.exists(): continue
+        t = p.read_text(encoding='utf-8')
+        if README_MARK[0] not in t: print(f'{name}: no {README_MARK[0]} marker, skipped'); continue
+        a = t.index(README_MARK[0]) + len(README_MARK[0]); b = t.index(README_MARK[1])
+        block = '\n\n' + credits.summary(data).replace('\n', '\n\n') + '\n\n' + credits.as_markdown(data) + '\n\n'
+        p.write_text(t[:a] + block + t[b:], encoding='utf-8', newline='\n')
+    print(f'credits: {len(data["packs"])} packs, {len(credits.groups(data))} groups')
+
+
 def main():
     if '--index' in sys.argv:
         write_index(sys.argv[sys.argv.index('--index') + 1]); return
+    if '--credits' in sys.argv:
+        write_credits(sys.argv[sys.argv.index('--credits') + 1]); return
     ap = argparse.ArgumentParser(); ap.add_argument('--export', required=True)
     ap.add_argument('--presets', help='comma-separated preset names (default: every preset without 测试 in its name)')
     ap.add_argument('--audio-only', action='store_true', help='only the voice lines; GIFs, presets and the catalog stay as they are')

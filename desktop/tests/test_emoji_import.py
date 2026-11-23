@@ -264,5 +264,57 @@ class StudioImportTests(unittest.TestCase):
         self.assertIn('未注明画师',self.pet.preferences.imported_credit.text())
 
 
+class StickerCreditsTests(unittest.TestCase):
+    """Every pack on 呜哇小站's 爱弥斯 list is credited with the group numbers and author links written under it."""
+    @classmethod
+    def setUpClass(cls):
+        from aemeath_pet import credits
+        cls.credits=credits; cls.data=credits.load(REPO)
+
+    def test_every_pack_and_every_group_number_is_credited(self):
+        self.assertGreaterEqual(len(self.data['packs']),43)
+        named={n for _,n in self.credits.groups(self.data)}
+        self.assertEqual(set(self.credits.numbers(self.data))-named,set())
+        summary=self.credits.summary(self.data)
+        for word in ('1036168246','1103460714','1057194050','1063144481','1124633691','https://vgen.co/Gwenevyr','https://space.bilibili.com/30905275','CC BY-NC-SA 4.0'):
+            self.assertIn(word,summary)
+
+    def test_credit_files_and_readme_carry_the_whole_list(self):
+        listing=(REPO/'assets/CREDITS.txt').read_text('utf8'); readme=(REPO/'README.md').read_text('utf8')
+        for pack in self.data['packs']:
+            self.assertIn(self.credits.pack_url(pack),listing); self.assertIn(self.credits.pack_url(pack),readme)
+            for link in pack['links']: self.assertIn(link,listing)
+
+    def test_a_pack_newer_than_the_image_index_is_named_after_the_credits(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=make_root(temp); shutil.copy2(REPO/self.credits.CREDITS,root/self.credits.CREDITS)
+            path=pathlib.Path(temp)/'aimisi-magical-girl-a-20261122.gif.zip'
+            with zipfile.ZipFile(path,'w') as z: z.writestr('001-CH01_拜年.gif',gif('red'))
+            importer.import_zips([path],root)
+            self.assertEqual(importer.imported_packs(root),[('嗷懒叽','爱弥斯 · 春贺 动态表情包（懒牌）',1)])
+
+
+class SettingsCreditsTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.app=QApplication.instance() or QApplication([]); cls.app.setQuitOnLastWindowClosed(False)
+
+    def test_about_lists_every_pack_with_clickable_links(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path=pathlib.Path(temp)/'settings.json'
+            from aemeath_pet.config_io import save_atomic
+            save_atomic(path,dict(appearance=dict(audio_muted=True)))
+            with patch.object(module,'SETTINGS',path):
+                pet=module.Pet(offline=True); pet.timer.stop(); pet.slow_timer.stop()
+                try:
+                    pet.open_preferences('版本与更新'); view=pet.preferences.pack_credits
+                    self.assertTrue(view.openExternalLinks())
+                    text=view.toPlainText()
+                    for title in ('爱弥斯·演唱会捏捏动态表情包（大寸）','爱弥斯 Cheek Puff 捏脸表情包','【官转】Irasutoya联名表情包'): self.assertIn(title,text)
+                    self.assertIn('https://vgen.co/Gwenevyr',view.toHtml())
+                finally:
+                    pet.preferences.hide(); pet.hide()
+
+
 if __name__=='__main__':
     unittest.main()

@@ -155,6 +155,12 @@ class Preferences(QDialog):
         tip=QLabel('发现新版时显示无声常驻气泡，语音台词结束后恢复。点击“一键更新”或气泡中的“更新并重启爱弥斯”，自动下载程序更新、保留配置素材并重启。“今日不再提醒”在当天及当天重启后保持生效。'); tip.setWordWrap(True); updates.addRow(tip)
         updates.section('关于与致谢')
         about=QLabel(about_text(catalog)); about.setWordWrap(True); about.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse); updates.addRow(about)
+        from . import credits as sticker_credits
+        data=sticker_credits.load(ROOT)
+        if data['packs']:
+            whole=QLabel(sticker_credits.summary(data)); whole.setWordWrap(True); whole.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse); updates.addRow(whole)
+            from PySide6.QtWidgets import QTextBrowser
+            self.pack_credits=QTextBrowser(); self.pack_credits.setOpenExternalLinks(True); self.pack_credits.setMinimumHeight(260); self.pack_credits.setHtml(sticker_credits.as_html(data)); updates.addRow(self.pack_credits)
         self.imported_credit=QLabel(); self.imported_credit.setWordWrap(True); self.imported_credit.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse); updates.addRow(self.imported_credit)
         site=QPushButton('打开呜哇小站'); site.clicked.connect(lambda:QDesktopServices.openUrl(QUrl(SITE))); updates.addRow(site)
         footer=QHBoxLayout(); self.status=QLabel('设置自动保存'); self.status.setWordWrap(True); footer.addWidget(self.status,1)
