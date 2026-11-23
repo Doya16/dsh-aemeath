@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "bytes": 195394853,
-  "sha256": "0b167010bf91c3c84591f5ce849bea91629dd9093dc31a167015e84b2429d426",
+  "bytes": 195454026,
+  "sha256": "a1a7559a002fbf836d5a2fbfef8b301a56285b593ba5ef70496fd174d93346e9",
   "url": "https://github.com/Doya16/dsh-aemeath/releases/download/v1.0.0/Aemeath-Windows-v1.0.0.zip",
   "program": {
     "schema": 1,
@@ -11,25 +11,29 @@
     "bridge_protocol": 1,
     "patch": {
       "name": "Aemeath-Program-Update-v1.0.0.zip",
-      "bytes": 124825212,
-      "sha256": "74135bb4e60a425aeb0a55ace408bc4192146c5b7f4ce6677a557f535d150da8"
+      "bytes": 124837701,
+      "sha256": "3ef2981fa5a9c6c38247490360b7c393dc6a074547672ec246689e26ec87e40e"
     },
     "files": {
       "\u7231\u5f25\u65afDeepSeek\u684c\u5ba0\u542f\u52a8.exe": {
-        "bytes": 8593379,
-        "sha256": "52c5d678aa19cfa1ab1c3b51073b6177b4534a13e0cd0172fdea03d72a17d4ba"
+        "bytes": 8592995,
+        "sha256": "8768285f52cfad3dbaacf48a2aac6e30006776a62f2b781a88f84450b8359c72"
       },
       "tools/aemeath-updater.exe": {
-        "bytes": 8602919,
-        "sha256": "3ff5f11084bcd8abdc0cac28bb08e2b8ad966505c01d58f0611094fc2ef7ded5"
+        "bytes": 8602825,
+        "sha256": "a901704132c64914e004539e09576db00ba5922a5f6dc177d9dca6403a61f171"
       },
       "BUILD_INFO.json": {
         "bytes": 464,
-        "sha256": "40d4cfaf691574169c435b57b36b16bfed6883eb2eaefdde2c21202acbb7b4d9"
+        "sha256": "769ed012f238409f7fbfac04a1644689e8c11cd496ef0d8af4a0dc1f005f857e"
       },
       "resources/emoji-index.json": {
         "bytes": 353307,
         "sha256": "809fc8091fd71db5c5dcf23616c3d60d6e70f23b9b7e5253436665ffb95ccc3e"
+      },
+      "resources/sticker-credits.json": {
+        "bytes": 12471,
+        "sha256": "feb70d22633c0cd796b172f622fe990e5af9efa38e061a522544e74de64ab232"
       },
       "resources/icons/app.ico": {
         "bytes": 158283,
@@ -48,12 +52,12 @@
         "sha256": "2a63c3eabe65c13012185e658d899e639a82eb371fd0cb65cb33175e095a7f91"
       },
       ".programs/1.0.0/\u7231\u5f25\u65afDeepSeek\u684c\u5ba0\u542f\u52a8.exe": {
-        "bytes": 5735908,
-        "sha256": "a0c06313cbdb978b371a9497a1842a9551c8858e529c9ce8a61d23f79f02c90c"
+        "bytes": 5741694,
+        "sha256": "d978036d9ffadb108ebb982cf338987c1ad1c8ebbc329f4141fa76c43204177d"
       },
       ".programs/1.0.0/_internal/base_library.zip": {
         "bytes": 1333490,
-        "sha256": "c0d82910e39720709ada60c366277f2d5ba5fb8bc2ec647e404a956b57f9d528"
+        "sha256": "dd4d8b6bd88fa5d64a1b5fa6bdcd953a7accd2a9305315708ec60f9d65a5da1a"
       },
       ".programs/1.0.0/_internal/libcrypto-3-x64.dll": {
         "bytes": 8003376,
@@ -1044,8 +1048,8 @@
         "sha256": "8fb4432feebb782f7f2338ca43a14daf7aa45de5b4fbab9ceb900d9800c7c862"
       },
       "THIRD_PARTY.txt": {
-        "bytes": 2810,
-        "sha256": "65624b10342f82a04a4d64ff12ced4adc4c459fb3b2d02493170a35285cc55bb"
+        "bytes": 13755,
+        "sha256": "155397059cab47418b54411c81105d700b255cc2a927e9e7518ab26174d4d287"
       },
       "requirements.txt": {
         "bytes": 96,
@@ -1111,6 +1115,10 @@
         "bytes": 10339,
         "sha256": "50541871bfd0f6b228867b0eefef3bf869c0adf94c218724191650c6850f161b"
       },
+      "aemeath_pet/credits.py": {
+        "bytes": 4124,
+        "sha256": "9c8e7a54fc6642e47b76588bc78a32e4be9b3f421d449c63c2f04454da2ce739"
+      },
       "aemeath_pet/daily_recap.py": {
         "bytes": 3832,
         "sha256": "ff602bad5799c3051376fc9e67b48ea23dd9e130d0dfba170509cda9393c61c2"
@@ -1120,8 +1128,8 @@
         "sha256": "2987d34d0bab7bdf6c7f7ab9391b4d13852268a2163c6e97a14c2b557c1a1321"
       },
       "aemeath_pet/emoji_import.py": {
-        "bytes": 9910,
-        "sha256": "5f9af324639959eda6c3e8cb21e794399cc5ed7ee0fa62066faa34048efbd30a"
+        "bytes": 10198,
+        "sha256": "db6c213bcb94993435a5bb20ff369ffca0b15de7ed57e8e0a4a96d493d431b26"
       },
       "aemeath_pet/fullscreen_guard.py": {
         "bytes": 2687,
@@ -1168,8 +1176,8 @@
         "sha256": "46d03efc0fb8c4f8befd75f5566ee375e0fc29a88f7168cf0cd47f30b1610846"
       },
       "aemeath_pet/preferences.py": {
-        "bytes": 31198,
-        "sha256": "798dab223ea7af6195107b4a6501feaaf6d403397cdc8edcac862a17d6bc8e76"
+        "bytes": 31774,
+        "sha256": "bd59870e01d26ee76d461615cf96a52909263a1bee42338c4e1a416973ce1f5a"
       },
       "aemeath_pet/presentation_size.py": {
         "bytes": 6213,
