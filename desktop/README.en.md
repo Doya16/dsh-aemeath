@@ -18,6 +18,26 @@ Aemeath changes expression while a **DeepSeek Harness** task runs, answers with 
 
 For **Windows 10/11 x64**. The full package ships **three expression presets (鸭牌, 雾雪, Stephen), 90 subtitled Aemeath voice lines** and two fonts and the Harness connection plugin. More Aemeath sticker packs can be downloaded from [呜哇小站](https://emoji.wuwa.games/archives?character=爱弥斯) and imported in one step. No Python needed.
 
+## Demo
+
+![All three presets at once: pat, double-click, milk tea, done confetti](https://raw.githubusercontent.com/Doya16/aemeath-deepseek-pet/main/docs/images/demo-presets.gif)
+
+[Full demo video · 6:16 · 1920×1080](https://github.com/Doya16/aemeath-deepseek-pet/releases/download/v1.0.0/Aemeath-Promo-v1.0.0.mp4) (Chinese)
+
+| Time | Shows |
+| --- | --- |
+| 0:00 | Opening |
+| 0:08 | 01 Tasks: expressions follow the task (running, needs you / error / paused, several sessions) |
+| 1:06 | 02 Interaction: hover, pat, double-click, right-click menu, drag |
+| 1:40 | 03 Voice: 90 subtitled lines; bubbles and mute |
+| 2:04 | 04 Presets: 鸭牌 / 雾雪 / Stephen, importing 呜哇小站 sticker zips |
+| 3:01 | 05 Balance |
+| 3:18 | 06 Companion: edge dock, full-screen hide, daily recap, lock and click-through |
+| 4:13 | 07 Settings: rest reminder, one settings window, credits |
+| 4:52 | 08 Install: GitHub full package, DSH plugin market (page live once listed), one-click update |
+| 5:32 | 09 Codex edition: both editions side by side |
+| 5:49 | Credits: artists, commissioners and crowdfunders, all 43 packs on 呜哇小站 with links and group numbers |
+
 ## Install
 
 **Requirements**: Windows 10 (1809 or later) or Windows 11, 64-bit, with the official **DeepSeek Harness** desktop client installed, signed in and opened once.
