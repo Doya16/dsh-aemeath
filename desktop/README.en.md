@@ -42,7 +42,7 @@ For **Windows 10/11 x64**. The full package ships **three expression presets (�
 
 **Requirements**: Windows 10 (1809 or later) or Windows 11, 64-bit, with the official **DeepSeek Harness** desktop client installed, signed in and opened once.
 
-1. Download **Aemeath-DeepSeek-Windows-v1.0.0.zip** from [Releases](https://github.com/Doya16/aemeath-deepseek-pet/releases/latest).
+1. Download **Aemeath-DeepSeek-Windows-v1.0.1.zip** from [Releases](https://github.com/Doya16/aemeath-deepseek-pet/releases/latest).
 2. Extract it into its own folder (Explorer "Extract All", or 7-Zip "Extract to Aemeath-DeepSeek-Windows-v…\"). The zip has no top-level folder. Don't extract into `C:\Program Files`.
 3. Double-click **一键部署.cmd** in the extracted folder. It checks the files, asks you to quit Harness from the tray and installs the Harness connection plugin `dsh-aemeath-pet` (type `S` to skip it for now), creates desktop and Start menu shortcuts and starts Aemeath.
 4. Right-click the pet → **设置 (Settings)**: pick the session to follow under **连接 DeepSeek**, switch the expression preset under **桌面与声音**, change expressions and voice lines in **交互工作室**.
